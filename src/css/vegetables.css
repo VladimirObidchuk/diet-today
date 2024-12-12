@@ -2,3 +2,62 @@
 }
 @media only screen and (min-width: 1280px) {
 }
+.vegetables {
+  background-color: var(--bg-vgtables);
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.section-vegetables {
+  display: block;
+}
+.vegetables-hero {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+.vegetables-title {
+  color: #fbfbfb;
+  font-size: 48px;
+}
+.vegetables-span {
+  color: #d4bfc4;
+}
+.vegetables-text {
+  font-size: 14px;
+  line-height: 1.4;
+  padding-bottom: 40px;
+}
+.vegetables-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.vegetables-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.vegetables-item {
+  border-radius: 40px;
+  padding: 32px 24px;
+  background-color: #fbfbfb;
+}
+.vegetables-title-fruct {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: var(--bg-vgtables);
+  margin-bottom: 12px;
+}
+.vegetables-text-fruct {
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
