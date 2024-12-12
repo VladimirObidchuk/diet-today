@@ -8,8 +8,15 @@
 @import url('./reset.css');
 @import url('./base.css');
 @import url('./container.css');
+@import url('./btn.css');
 @import url('./animations.css');
 
 /* Sections style */
 @import url('./header.css');
+@import url('./hero');
+@import url('./work');
+@import url('./advertisement.css');
+@import url('./vegetables.css');
+@import url('./reviews.css');
+@import url('./order.css');
 @import url('./footer.css');

@@ -11,6 +11,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  color: #141414;
+  --bg-hero: #576f35; /* background for section hero and How it works */
+  --bg-vgtables: #7a3145; /* background for section How it works,vegetables,footer */
 }
 html {
   scroll-behavior: smooth;
@@ -24,6 +27,27 @@ body {
   margin: 0;
 }
 
-main {
-  flex-grow: 1;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #fbfbfb;
+}
+.title {
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
 }
