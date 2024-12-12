@@ -1,3 +1,87 @@
+
+.inp-wrp {
+    margin-bottom: 40px;
+  }
+  
+  .inp {
+    width: 400px;
+    height: 50px;
+    padding: 0 20px;
+    border: 1px solid gray;
+    border-radius: 30px;
+    
+    outline: none;
+  }
+  
+  /* стилізація плейсхолдера */
+  .inp::placeholder {
+    color: black;
+  }
+  
+  /* стилізація інпута в стані фокус */
+  .inp:focus {
+    border-color: brown;
+  }
+  
+  /* стилізація інпута при не валідному значенні */
+  .inp:not(:placeholder-shown):invalid {
+    border-color: red;
+  }
+  
+  /* стилізація інпута при валідному значенні */
+  .inp:not(:placeholder-shown):valid {
+    border-color: green;
+  }
+  
+  .text-valid,
+  .text-invalid {
+    font-size: 14px;
+    padding-left: 20px;
+    margin-top: 4px;
+    display: none;
+  }
+  
+  .text-valid {
+    color: green;
+    margin: 0;
+  }
+  
+  .text-invalid {
+    color: red;
+    margin: 0;
+  }
+  
+  /* стилізація інформаційного текста при валідному значенні в інпуті */
+  .inp:not(:placeholder-shown):valid ~ .text-valid {
+    display: block;
+  }
+  
+  /* стилізація інформаційного текста при не валідному значенні в інпуті */
+  .inp:not(:placeholder-shown):invalid ~ .text-invalid {
+    display: block;
+  }
+  
+  .button-send {
+    display: block;
+    margin: 0 auto;
+    min-width: 160px;
+    padding: 12px 24px;
+    background-color: transparent;
+    border: 1px solid gray;
+    border-radius: 30px;
+    
+    cursor: pointer;
+  }
+  
+  .button-send:is(:hover, :focus) {
+     border-color: brown;
+  }
+
+
+
+
+
+
 @media only screen and (min-width: 768px) {
 }
 @media only screen and (min-width: 1280px) {
