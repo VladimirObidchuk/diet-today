@@ -1,14 +1,14 @@
 <section class="order">
   <div class="container">
-    <h1>Fresh <span class="text-accent">Harvest</span> Box has got you covered</h1>
-         <p>Our boxes are packed with delicious, nutritious vegetables, perfect for anyone looking to eat healthier or support local farmers. Order your box today and start enjoying the best that nature has to offer!</p> 
+    <h1 class="order-title">Fresh <span class="text-accent-harvest">Harvest</span> Box has got you covered</h1>
+         <p class="order-appeal">Our boxes are packed with delicious, nutritious vegetables, perfect for anyone looking to eat healthier or support local farmers. Order your box today and start enjoying the best that nature has to offer!</p> 
         <div class="order-wrapper">
           <div class="order-window-left">
          
-            <p class="order-caption">Ordering <span class="text-accent">from us</span>is quick and easy! Fill out <span class="text-accent">the form</span>below and we will contact you!</p>
+            <p class="order-caption">Ordering <span class="text-accent-from-us">from us </span>is quick and easy! Fill out <span class="text-accent-the-form">the form</span> below and we will contact you!</p>
           
               
-              <form action="">
+              <form class="order-form" action="">
 
                 <div class="inp-wrp">
                   <input class="inp" type="text" name="user-name" placeholder="Full Name" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required>
@@ -28,19 +28,55 @@
                 placeholder="Comment"
                 ></textarea>
               </div>
-                <button class="btn" type="submit">Send</button>
+                <button class="btn-order" type="submit">Send</button>
               </form> 
-             </div>
+          </div>
+          
 
              <div class="made-right-side">
 
+              <picture class="order-image">
+
+                <!-- Desktop -->
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="{=$image-path}made-desktop.png 1x,
+                  
+                  {=$image-path}made-desktop@2x.png 2x
+                  "
+                />
+                <!-- Tablet -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                  {=$image-path}made-tablet.png 1x,
+                  {=$image-path}made-tablet@2x.png 2x
+                  "
+                />
+                <!-- Mobile -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                  {=$image-path}made-mobile.png 1x,
+                  {=$image-path}made-mobile@2x.png 2x
+                  "
+                />
                 <img
+                  class="portfolio-image"
+                  src="{=$image-path}made-mobile.png"
+                  alt="Making drink photo"
+                  width="295"
+                  height="272"
+                  
+                />
+              </picture>
+                <!-- <img
                 class="team-image"
                 srcset="./images/team/1img.jpg 1x, ./images/team/1img@2x.jpg 2x"
                 src="./images/team/1img.jpg"
                 width="264"
                 alt="Making drink photo"
-              />
+              /> -->
               
               <div class="socials">
                 <p class="socials-text">Follow us on our social networks:</p>
@@ -48,12 +84,12 @@
                 <ul class="socials-list">
                   <li class="socials-item">
                     <a class="socials-link" href="https://www.instagram.com/goitclub/ " target="_blank">
-                      INSTAGRAM / 
+                      INSTAGRAM
                     </a>
                   </li>
                   <li class="socials-item">
                     <a class="socials-link" href=" https://www.facebook.com/goITclub/ " target="_blank">
-                      FACEBOOK /
+                      FACEBOOK
                     </a>
                   </li>
                   <li class="socials-item">
