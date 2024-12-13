@@ -22,7 +22,7 @@
 @media only screen and (min-width: 768px) {
   .vegetables-hero {
     gap: 24px;
-    width: 626px;
+    width: 626px; /* не знайшла іншого виходу, аніж вказати розмір, модливо треба якось інакше, але це єдиний вихід, котрий я знайшла*/
   }
 }
 .vegetables-title {
