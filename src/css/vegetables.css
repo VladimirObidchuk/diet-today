@@ -1,11 +1,13 @@
-@media only screen and (min-width: 768px) {
-}
-@media only screen and (min-width: 1280px) {
-}
 .vegetables {
   background-color: var(--bg-vgtables);
   padding-top: 80px;
   padding-bottom: 80px;
+}
+@media only screen and (min-width: 768px) {
+  .vegetables {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 .section-vegetables {
   display: block;
@@ -17,9 +19,20 @@
   flex-direction: column;
   gap: 20px;
 }
+@media only screen and (min-width: 768px) {
+  .vegetables-hero {
+    gap: 24px;
+    width: 626px;
+  }
+}
 .vegetables-title {
   color: #fbfbfb;
   font-size: 48px;
+}
+@media only screen and (min-width: 768px) {
+  .vegetables-title {
+    font-size: 64px;
+  }
 }
 .vegetables-span {
   color: #d4bfc4;
@@ -29,12 +42,14 @@
   line-height: 1.4;
   padding-bottom: 40px;
 }
-.vegetables-container {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
+@media only screen and (min-width: 768px) {
+  .vegetables-text {
+    font-size: 16px;
+    line-height: 1.25;
+    padding-bottom: 52px;
+  }
 }
+
 .vegetables-list {
   display: flex;
   flex-direction: column;
@@ -42,10 +57,31 @@
   align-items: center;
   gap: 20px;
 }
+@media only screen and (min-width: 768px) {
+  .vegetables-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 28px 24px;
+  }
+}
 .vegetables-item {
   border-radius: 40px;
   padding: 32px 24px;
   background-color: #fbfbfb;
+}
+
+@media only screen and (min-width: 768px) {
+  .vegetables-item {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .vegetables-item {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
 }
 .vegetables-title-fruct {
   font-weight: 600;
@@ -56,8 +92,24 @@
   color: var(--bg-vgtables);
   margin-bottom: 12px;
 }
+@media only screen and (min-width: 768px) {
+  .vegetables-title-fruct {
+    font-size: 32px;
+  }
+}
 .vegetables-text-fruct {
   font-size: 14px;
   line-height: 1.4;
   margin-bottom: 12px;
+}
+@media only screen and (min-width: 768px) {
+  .vegetables-text-fruct {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .vegetables-text-fruct {
+    margin-bottom: 8px;
+  }
 }
