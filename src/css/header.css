@@ -68,17 +68,28 @@
         height: 52px;
     }
 
-
-    .nav-logo {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 100px;
+    .header-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
-    
-   
+
+    .nav-list {
+        display: flex;
+    }
+
+    .header-btn {
+        display: block;
+    }
+
     .burger-btn {
         display: none;
     }
+
+
+
+
+    
     
 }
