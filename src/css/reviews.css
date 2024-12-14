@@ -39,6 +39,7 @@
 .reviews-text {
   font-size: 14px;
   line-height: 1.43;
+  color: #141414;
 }
 
 @media only screen and (min-width: 768px) {
