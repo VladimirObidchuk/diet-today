@@ -4,7 +4,7 @@
     margin: 0 auto;
     max-width: 375px;
     background-color: #576f35;
-    background-image: url(/img/hero/hero-mobile.jpg);
+    background-image: linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)), url(/img/hero/hero-mobile.jpg);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 375px 372px;
@@ -12,7 +12,7 @@
     @media (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
     .hero {
-        background-image: url(/img/hero/hero-mobile@2x.jpg);
+        background-image: linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)), url(/img/hero/hero-mobile@2x.jpg);
     }
         }
     .hero-title {
@@ -39,12 +39,12 @@
     padding-bottom: 588px;
     max-width: 768px;
     background-size: 768px 536px;
-    background-image: url(/img/hero/hero-tablet.jpg);
+    background-image: linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)), url(/img/hero/hero-tablet.jpg);
     }
 @media only screen and (min-width: 768px) and (min-resolution: 192dpi),
         only screen and (min-width: 768px) and(min-resolution: 2dppx) {
     .hero {
-    background-image: url(/img/hero/hero-tablet@2x.jpg);
+    background-image: linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)), url(/img/hero/hero-tablet@2x.jpg);
     }        
         }
 .hero-title {
@@ -65,14 +65,14 @@
     padding-top: 232px;
     padding-bottom: 52px;
     max-width: 1280px;
-    background-image: url(/img/hero/hero-desctop.jpg);
+    background-image: linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)), url(/img/hero/hero-desctop.jpg);
     background-position: right;
     background-size: 640px 796px;
         }
 @media only screen and (min-width: 1280px) and (min-resolution: 192dpi),
 only screen and (min-width: 1280px) and(min-resolution: 2dppx) {
     .hero {
-        background-image: url(/img/hero/hero-desctop@2x.jpg);
+        background-image: linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)), url(/img/hero/hero-desctop@2x.jpg);
     }
 }
 .hero-title {
