@@ -61,4 +61,26 @@
     
 }
 @media only screen and (min-width: 1280px) {
+    .hero {
+    padding-top: 232px;
+    padding-bottom: 52px;
+    max-width: 1280px;
+    background-image: url(/img/hero/hero-desctop.jpg);
+    background-position: right;
+    background-size: 640px 796px;
+        }
+@media only screen and (min-width: 1280px) and (min-resolution: 192dpi),
+only screen and (min-width: 1280px) and(min-resolution: 2dppx) {
+    .hero {
+        background-image: url(/img/hero/hero-desctop@2x.jpg);
+    }
+}
+.hero-title {
+    max-width: 502px; 
+    margin-bottom: 128px;
+
+}
+.hero-text {
+    max-width: 472px;
+}
 }
