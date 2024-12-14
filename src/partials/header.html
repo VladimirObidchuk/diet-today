@@ -1,19 +1,28 @@
-<header class="header">
-  <div class="container">
-    <nav class="nav">
+<header class="page-header">
+  <div class="container header-container">
+    <nav class="header-nav">
       <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
+        <svg class="nav-logo-icon" width="216" height="20">
+          <use href="{=$icon-path}#icon-logo"></use>
         </svg>
       </a>
       <ul class="nav-list">
         <li class="nav-item">
-          <a class="nav-link" href=""></a>
+          <a class="nav-link" href="#work">how it works</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href=""></a>
+          <a class="nav-link" href="#vegetables">vegetables</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#reviews">reviews</a>
+        </li>
+        <button class="header-button">shop now</button>
       </ul>
     </nav>
+    <button class="burger-btn" type="button">
+      <svg class="burger-icon" width="32" height="32">
+        <use href="{=$icon-path}#icon-burger-button"></use>
+      </svg>
+    </button>
   </div>
 </header>
