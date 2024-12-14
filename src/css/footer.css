@@ -1,4 +1,4 @@
-.footer-container {
+.footer {
   background-color: #7a3145;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -88,7 +88,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .footer-container {
+  .footer {
     padding-top: 32px;
     padding-bottom: 32px;
   }
@@ -150,7 +150,7 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  .footer-container {
+  .footer {
     padding-top: 52px;
     padding-bottom: 52px;
   }
