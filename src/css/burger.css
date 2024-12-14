@@ -5,6 +5,9 @@
   width: 100%;
   height: 100%;
   background-color: rgba(20, 20, 20, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 @media only screen and (min-width: 1280px) {
@@ -15,20 +18,13 @@
 
 .container.burger-menu {
   position: fixed;
-
   display: flex;
   flex-direction: column;
   align-items: center;
-
   top: 0;
-  left: 0;
-
+  right: 0;
   width: 100%;
   height: 100%;
-
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
 
   background-color: #576f35;
 
@@ -37,7 +33,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .container {
+  .wrapper .container {
     max-width: 351px;
   }
 }
@@ -53,7 +49,7 @@
     display: none;
   }
 }
-.burger-menu.is-open {
+.wrapper.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
