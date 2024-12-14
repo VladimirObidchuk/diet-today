@@ -2,21 +2,15 @@
 .inp-wrp {
     margin-bottom: 16px;
   }
-
-
   
   .inp {
     width: 100%;
     border: 1px solid #858585;
-border-radius: 30px;
-padding: 0 16px;
+    border-radius: 30px;
+    padding: 0 16px;
 
-height: 48px;
-    /* height: 50px;
-    padding: 0 20px;
-    border: 1px solid gray;
-    border-radius: 30px; */
-    
+    height: 48px;
+
     outline: none;
   }
   @media only screen and (min-width: 768px) {
@@ -28,8 +22,6 @@ height: 48px;
   @media only screen and (min-width: 1280px) {
   }
   
-
-
 
   /* стилізація плейсхолдера */
   .inp::placeholder {
@@ -79,32 +71,6 @@ height: 48px;
     display: block;
   }
   
-  /* .button-send {
-    display: block;
-    margin: 0 auto;
-    min-width: 160px;
-    padding: 12px 24px;
-    background-color: transparent;
-    border: 1px solid gray;
-    border-radius: 30px;
-    
-    cursor: pointer;
-  }
-  
-  .button-send:is(:hover, :focus) {
-     border-color: brown;
-  } */
-
-
-
-
-
-
-@media only screen and (min-width: 768px) {
-}
-@media only screen and (min-width: 1280px) {
-}
-
 
 .order {
   padding-top: 80px;
@@ -131,10 +97,7 @@ height: 48px;
   .order-title {
     
   }
-
 }
-
-
 .text-accent-harvest {
   color: #d4bfc4; 
 
@@ -164,10 +127,7 @@ height: 48px;
   }
 }
 
-
-
 .order-wrapper {
-
 }
 
 @media only screen and (min-width: 768px) {
@@ -207,7 +167,6 @@ margin-bottom: 20px;
   }
 }
 
-
 .order-caption {
   
 font-weight: 600;
@@ -235,7 +194,6 @@ color: #576f35;
 }
 
 
-
 .order-form {
   
 }
@@ -246,9 +204,7 @@ color: #576f35;
 font-weight: 500;
 font-size: 14px;
 line-height: 1.43;
-/* text-align: center; */
 color: #141414;
-
 
 }
 
@@ -258,9 +214,6 @@ color: #141414;
 line-height: 1.25; 
   }
 }
-
-
-
 
 .text-valid {
 }
@@ -282,7 +235,6 @@ line-height: 1.25;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.25;
-/* text-align: center; */
 color: #141414;
 width: 100%;
 border: 1px solid #858585;
@@ -339,7 +291,6 @@ border: none;
   .order-right-side {
     padding: 52px;
   
-
 }}
 
 @media only screen and (min-width: 1280px) {
@@ -375,7 +326,6 @@ border: none;
     height: 352px;
   }
 } 
-
 
 
 .socials {
