@@ -129,7 +129,7 @@
     line-height: 1.25;
   }
 
-  .contacts {
+  .contact {
     display: flex;
     flex-direction: column;
     gap: 64px;
@@ -155,7 +155,7 @@
     padding-bottom: 52px;
   }
 
-  .contacts {
+  .contact {
     flex-direction: row;
     gap: 121px;
     margin-bottom: 124px;
