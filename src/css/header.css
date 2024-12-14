@@ -1,56 +1,53 @@
 .page-header {
-    background-color: green;
-    width: 100%;
-    height: 32px;
+  background-color: green;
+  width: 100%;
+  height: 32px;
 }
 
 .header-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .nav-list {
-    display: none;
-} 
- 
+  display: none;
+}
+
 .nav-logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 168px;
-    height: 16px;
-    gap: 2px;
-    padding-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 168px;
+  height: 16px;
+  gap: 2px;
+  padding-left: 20px;
 }
 
 .nav-logo-icon {
-    fill: #fbfbfb;
-    width: 16px;
-    height: 16px;
+  fill: #fbfbfb;
 }
 
 .header-logo-text {
-    fill: #fbfbfb;
-    width: 146px;
-    height: 12px;
+  fill: #fbfbfb;
+  width: 146px;
+  height: 12px;
 }
 
 .burger-btn {
-    padding: 0;
-    border: none;
-    background-color: transparent;
-    margin-left: auto;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  margin-left: auto;
 }
 
 .burger-icon {
-    display: block;
-    stroke-width: 3px;
-        stroke: #fbfbfb;
+  display: block;
+  stroke-width: 3px;
+  stroke: #fbfbfb;
 }
 
 @media only screen and (min-width: 768px) {
-
 }
 @media only screen and (min-width: 1280px) {
 }
