@@ -291,6 +291,8 @@ border-radius: 15px;
 padding: 16px 16px;
 height: 92px;
 
+resize: none;
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -335,15 +337,15 @@ border: none;
 }
 @media only screen and (min-width: 768px) {
   .order-right-side {
-    padding-top: 52px;
-  padding-bottom: 52px;
-  padding-left: 52px;
+    padding: 52px;
+  
+
 }}
 
 @media only screen and (min-width: 1280px) {
   .order-right-side {
    
-  padding-left: 48px;
+    padding: 52px 48px;
 }}
 
 .order-image {
@@ -361,16 +363,16 @@ border: none;
 @media only screen and (min-width: 768px) {
   .order-image {
      margin-bottom: 52px;
-     /* width: 536px;
-    height: 316px; */
+     width: 536px;
+    height: 316px;
   } 
 }
 
 @media only screen and (min-width: 1280px) {
   .order-image {
     margin-bottom: 80px;
-    /* width: 428px;
-    height: 352px; */
+    width: 428px;
+    height: 352px;
   }
 } 
 
