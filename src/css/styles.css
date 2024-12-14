@@ -13,6 +13,7 @@
 
 /* Sections style */
 @import url('./header.css');
+@import url('./burger.css');
 @import url('./hero');
 @import url('./work');
 @import url('./advertisement.css');
