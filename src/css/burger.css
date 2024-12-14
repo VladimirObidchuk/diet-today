@@ -93,12 +93,6 @@
   margin-bottom: auto;
 }
 
-/* @media only screen and (min-width: 768px) {
-  .burger-nav {
-    margin-top: 360px;
-  }
-} */
-
 .burger-list {
   display: flex;
   flex-direction: column;
@@ -158,7 +152,7 @@
 }
 
 .burger-btn-send {
-  max-width: 175px;
+  width: 175px;
 
   font-weight: 600;
   font-size: 18px;
@@ -176,7 +170,7 @@
 @media only screen and (min-width: 768px) {
   .burger-btn-send {
     width: 157px;
-    padding: 16px 32px;
+    padding: 16px;
   }
 }
 
