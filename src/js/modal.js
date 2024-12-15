@@ -5,11 +5,15 @@
     // Додати атрибут data-modal-close на кнопку закриття
     closeModalBtn: document.querySelector('[data-modal-close]'),
     //додаем слухачі на кнопки вибору бургер меню
-    choiceSectionMenu: document.querySelectorAll('burger-link'),
+    choiceSectionMenu: document.querySelectorAll('.burger-link'),
+    shopToDo: document.querySelector('.burger-btn-send'),
     // Додати атрибут data-modal на бекдроп модалки
     modal: document.querySelector('[data-modal]'),
   };
-  //   refs.choiceSectionMenu.addEventListener('click', toggleModal);
+  refs.choiceSectionMenu.forEach(link => {
+    link.addEventListener('click', toggleModal);
+  });
+  refs.shopToDo.addEventListener('click', toggleModal);
   refs.openModalBtn.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
