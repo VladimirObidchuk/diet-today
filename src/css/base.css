@@ -4,8 +4,6 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
-  color: #fbfbfb;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -22,9 +20,12 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  min-width: 100vw;
+  min-width: 100%;
   min-height: 100vh;
   margin: 0;
+}
+.hide {
+  display: none;
 }
 
 .visually-hidden {

@@ -1,4 +1,392 @@
+
+.inp-wrp {
+    margin-bottom: 16px;
+  }
+  
+  .inp {
+    width: 100%;
+    border: 1px solid #858585;
+    border-radius: 30px;
+    padding: 0 16px;
+
+    height: 48px;
+
+    outline: none;
+  }
+  @media only screen and (min-width: 768px) {
+    .inp { 
+      height: 52px;
+  }
+  }
+
+  @media only screen and (min-width: 1280px) {
+  }
+  
+
+  /* стилізація плейсхолдера */
+  .inp::placeholder {
+    color: black;
+  }
+  
+  /* стилізація інпута в стані фокус */
+  .inp:focus {
+    border-color: brown;
+  }
+  
+  /* стилізація інпута при не валідному значенні */
+  .inp:not(:placeholder-shown):invalid {
+    border-color: red;
+  }
+  
+  /* стилізація інпута при валідному значенні */
+  .inp:not(:placeholder-shown):valid {
+    border-color: green;
+  }
+  
+  .text-valid,
+  .text-invalid {
+    font-size: 14px;
+    padding-left: 20px;
+    margin-top: 4px;
+    display: none;
+  }
+  
+  .text-valid {
+    color: green;
+    margin: 0;
+  }
+  
+  .text-invalid {
+    color: red;
+    margin: 0;
+  }
+  
+  /* стилізація інформаційного текста при валідному значенні в інпуті */
+  .inp:not(:placeholder-shown):valid ~ .text-valid {
+    display: block;
+  }
+  
+  /* стилізація інформаційного текста при не валідному значенні в інпуті */
+  .inp:not(:placeholder-shown):invalid ~ .text-invalid {
+    display: block;
+  }
+  
+
+.order {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #576f35;
+}
+.container {
+}
+
+.order-title {
+  
+  font-weight: 600;
+  font-size: 48px;
+  
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+
+  margin-bottom: 20px;
+}
+
 @media only screen and (min-width: 768px) {
+  .order-title {
+    
+  }
+}
+.text-accent-harvest {
+  color: #d4bfc4; 
+
+}
+.order-appeal{
+ 
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #fbfbfb;
+  margin-bottom: 40px;
+
+}
+@media only screen and (min-width: 768px) {
+  .order-title {
+    font-size: 64px;
+    line-height: 1.08;
+    margin-bottom: 24px;
+  }
+  .order-appeal{
+    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #fbfbfb; 
+    margin-bottom: 52px;
+  }
+}
+
+.order-wrapper {
+}
+
+@media only screen and (min-width: 768px) {
+  .order-wrapper {
+width: 640px;
+margin: 0 auto;
+  }
 }
 @media only screen and (min-width: 1280px) {
+  .order-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: unset;
+    gap: 32px;
+  } 
+}
+
+.order-window-left {
+  padding: 40px 20px;
+  background-color: #fbfbfb;
+  border-radius: 30px;
+
+width: 100%;
+margin-bottom: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .order-window-left {
+    padding: 72px 100px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .order-window-left {
+    max-width: 524px;
+    margin-bottom: 0;
+   padding: 52px 48px;
+  }
+}
+
+.order-caption {
+  
+font-weight: 600;
+font-size: 28px;
+line-height: 1;
+letter-spacing: -0.01em;
+text-transform: uppercase;
+color: #141414;
+
+margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .order-caption {
+  font-size: 32px;
+  margin-bottom: 52px;
+  }
+}
+
+.text-accent-from-us {
+  color: #7a3145;
+}
+.text-accent-the-form{
+color: #576f35;
+}
+
+
+.order-form {
+  
+}
+.inp-wrp {
+}
+.inp {
+  
+font-weight: 500;
+font-size: 14px;
+line-height: 1.43;
+color: #141414;
+
+}
+
+@media only screen and (min-width: 768px) {
+  .inp {
+    font-size: 16px;
+line-height: 1.25; 
+  }
+}
+
+.text-valid {
+}
+.text-invalid {
+}
+.order-form-field {
+  margin-bottom: 20px;
+  
+}
+@media only screen and (min-width: 768px) {
+  .order-form-field {
+    margin-bottom: 24px;
+  }}
+.field-textarea {
+  
+}
+.order-form-message {
+  
+font-weight: 500;
+font-size: 16px;
+line-height: 1.25;
+color: #141414;
+width: 100%;
+border: 1px solid #858585;
+border-radius: 15px;
+
+padding: 16px 16px;
+height: 92px;
+
+resize: none;
+
+}
+
+@media only screen and (min-width: 768px) {
+  .order-form-message {
+   
+    padding: 16px 15px;
+    height: 96px;
+  }
+}
+
+.order-form-message::placeholder {
+  color: #141414;
+}
+
+.btn-order {
+  border-radius: 30px;
+padding-top: 16px;
+padding-bottom: 16px;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+/* height: 52px; */
+background-color: #7a3145;
+font-family: "Inter Tight", sans-serif;
+font-weight: 600;
+font-size: 18px;
+line-height: 1.11;
+letter-spacing: -0.01em;
+text-transform: uppercase;
+color: #fbfbfb;
+border: none;
+
+}
+.order-right-side {
+  background-color: #7a3145;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 30px;
+}
+@media only screen and (min-width: 768px) {
+  .order-right-side {
+    padding: 52px;
+  
+}}
+
+@media only screen and (min-width: 1280px) {
+  .order-right-side {
+   
+    padding: 52px 48px;
+}}
+
+.order-image {
+  
+  
+    display: block;
+    
+  margin-bottom: 20px;
+  border-radius: 15px;
+  
+  
+    background-color: rgba(20, 20, 20, 0.2);
+}
+
+@media only screen and (min-width: 768px) {
+  .order-image {
+     margin-bottom: 52px;
+     width: 536px;
+    height: 316px;
+  } 
+}
+
+@media only screen and (min-width: 1280px) {
+  .order-image {
+    margin-bottom: 80px;
+    width: 428px;
+    height: 352px;
+  }
+} 
+
+
+.socials {
+}
+.socials-text {
+  
+font-weight: 700;
+font-size: 14px;
+line-height: 1.43;
+color: #d4bfc4;
+
+margin-bottom: 16px;
+
+}
+
+@media only screen and (min-width: 768px) {
+  .socials-text {
+   
+
+font-size: 16px;
+line-height: 1.25;
+
+  }
+}
+
+.socials-list {
+  display: flex;
+  flex-direction: row;
+  gap: 8px 23px;
+  
+  flex-wrap: wrap;
+  
+}
+@media only screen and (min-width: 768px) {
+  .socials-text {
+gap: 31px;
+
+  }
+}
+
+.socials-item {
+  position: relative;
+}
+
+.socials-item:not(:last-child)::after {
+  position: absolute;
+  content: '';
+  right: -15px;
+  top: 0;
+  height: 100%;
+  width: 2%;
+  background-color: #fff;
+  transform: rotate(20deg);
+}
+
+.socials-link {
+  
+font-weight: 600;
+font-size: 18px;
+line-height: 1.11;
+letter-spacing: -0.01em;
+text-transform: uppercase;
+color: #fbfbfb;
 }
