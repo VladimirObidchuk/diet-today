@@ -23,41 +23,40 @@
     />
     <title>Green Harvest</title>
     <script type="module" crossorigin src="/diet-today/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/diet-today/assets/index-DdPpV3yQ.css">
+    <link rel="stylesheet" crossorigin href="/diet-today/assets/index-CjKfS69d.css">
   </head>
   <body>
     <header class="page-header">
-  <div class="container header-container">
+  <div class="container">
     <nav class="header-nav">
       <a class="nav-logo" href="./index.html" aria-label="Site logo">
-
         <svg class="nav-logo-icon" width="216" height="20">
           <use href="/diet-today/assets/icon-EeAWGC0f.svg#icon-logo"></use>
         </svg>
       </a>
       <ul class="nav-list">
         <li class="nav-item">
-          <a class="nav-link" href="#work">how it works</a>
+          <a class="nav-link btn-link" href="#work">how it works</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#vegetables">vegetables</a>
+          <a class="nav-link btn-link" href="#vegetables">vegetables</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#reviews">reviews</a>
+          <a class="nav-link btn-link" href="#reviews">reviews</a>
         </li>
       </ul>
-      <button class="header-btn">shop now</button>
+      <button class="header-btn btn">shop now</button>
+      <button class="burger-btn" type="button" data-modal-open>
+        <svg class="burger-icon" width="32" height="32">
+          <use href="/diet-today/assets/icon-EeAWGC0f.svg#icon-burger-button"></use>
+        </svg>
+      </button>
     </nav>
-    <button class="burger-btn" type="button" data-modal-open>
-      <svg class="burger-icon" width="32" height="32">
-        <use href="/diet-today/assets/icon-EeAWGC0f.svg#icon-burger-button"></use>
-      </svg>
-    </button>
   </div>
 </header>
 
     <div class="wrapper" data-modal>
-  <div class="container burger-menu">
+  <div class="burger-menu">
     <button class="burger-btn-close" type="button" data-modal-close>
       <svg class="burger-svg-close" width="16" height="16">
         <use href="/diet-today/assets/icon-EeAWGC0f.svg#icon-clouse"></use>
@@ -338,95 +337,115 @@
 
       <section class="order">
   <div class="container">
-    <h1 class="order-title">Fresh <span class="text-accent-harvest">Harvest</span> Box has got you covered</h1>
-         <p class="order-appeal">Our boxes are packed with delicious, nutritious vegetables, perfect for anyone looking to eat healthier or support local farmers. Order your box today and start enjoying the best that nature has to offer!</p> 
-        <div class="order-wrapper">
-          <div class="order-window-left">
-         
-            <p class="order-caption">Ordering <span class="text-accent-from-us">from us </span>is quick and easy! Fill out<span class="text-accent-the-form"> the form</span> below and we will contact you!</p>
-          
-              
-              <form class="order-form" action="">
-
-                <div class="inp-wrp">
-                  <input class="inp" type="text" name="user-name" placeholder="Full Name" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required>
-                    <p class="text-valid">Succes!</p>
-                    <p class="text-invalid">Invalid email, try again</p>
-                </div>
-
-                <div class="inp-wrp">
-                <input class="inp" type="email" name="email" placeholder="Email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required>
-                  <p class="text-valid">Succes!</p>
-                  <p class="text-invalid">Invalid email, try again</p>
-              </div>
-              <div class="order-form-field field-textarea">
-                
-                <textarea class="order-form-message" name="user-comment" 
-                id="user-comment"  
-                placeholder="Comment"
-                ></textarea>
-              </div>
-                <button class="btn-order" type="submit">Send</button>
-              </form> 
+    <h1 class="order-title">
+      Fresh <span class="text-accent-harvest">Harvest</span> Box has got you
+      covered
+    </h1>
+    <p class="order-appeal">
+      Our boxes are packed with delicious, nutritious vegetables, perfect for
+      anyone looking to eat healthier or support local farmers. Order your box
+      today and start enjoying the best that nature has to offer!
+    </p>
+    <div class="order-wrapper">
+      <div class="order-window-left">
+        <p class="order-caption">
+          Ordering <span class="text-accent-from-us">from us </span>is quick and
+          easy! Fill out<span class="text-accent-the-form"> the form</span>
+          below and we will contact you!
+        </p>
+        <form class="order-form" action="">
+          <div class="inp-wrp">
+            <input
+              class="inp"
+              type="text"
+              name="user-name"
+              placeholder="Full Name"
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              required
+            />
+            <p class="text-valid">Succes!</p>
+            <p class="text-invalid">Invalid email, try again</p>
           </div>
-          
-
-             <div class="order-right-side">
-
-              <picture class="order-image">
-
-                <!-- Desktop -->
-                <source
-                  media="(min-width: 1280px)"
-                  srcset="/diet-today/assets/made-desktop-nOblj8yU.png 1x, /diet-today/assets/made-desktop@2x-D7TlM3Cb.png 2x"
-                />
-                <!-- Tablet -->
-                <source
-                  media="(min-width: 768px)"
-                  srcset="/diet-today/assets/made-tablet-BuDgBx_R.png 1x, /diet-today/assets/made-tablet@2x-Ckc8LQ9C.png 2x"
-                />
-                <!-- Mobile -->
-                <source
-                  media="(max-width: 767px)"
-                  srcset="/diet-today/assets/made-mobile-DDPmflLI.png 1x, /diet-today/assets/made-mobile@2x-exZOii_5.png 2x"
-                />
-                <img
-                  class="order-image"
-                  src="/diet-today/assets/made-desktop-nOblj8yU.png"
-                  alt="Making drink photo"
-                 width="428"
-                 height="352"
-                  
-                />
-              </picture>
-               
-              
-              <div class="socials">
-                <p class="socials-text">Follow us on our social networks:</p>
-                
-                <ul class="socials-list">
-                  <li class="socials-item">
-                    <a class="socials-link" href="https://www.instagram.com/goitclub/ " target="_blank">
-                      INSTAGRAM
-                    </a>
-                  </li>
-                  <li class="socials-item">
-                    <a class="socials-link" href=" https://www.facebook.com/goITclub/ " target="_blank">
-                      FACEBOOK
-                    </a>
-                  </li>
-                  <li class="socials-item">
-                    <a class="socials-link" href="https://www.youtube.com/c/GoIT " target="_blank">
-                      YOUTUBE 
-                    </a>
-                  </li>
-                  
-                </ul>
-            
-
-             </div>
-
+          <div class="inp-wrp">
+            <input
+              class="inp"
+              type="email"
+              name="email"
+              placeholder="Email"
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              required
+            />
+            <p class="text-valid">Succes!</p>
+            <p class="text-invalid">Invalid email, try again</p>
+          </div>
+          <div class="order-form-field field-textarea">
+            <textarea
+              class="order-form-message"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Comment"
+            ></textarea>
+          </div>
+          <button class="btn-order" type="submit">Send</button>
+        </form>
+      </div>
+      <div class="order-right-side">
+        <picture class="order-image">
+          <!-- Desktop -->
+          <source
+            media="(min-width: 1280px)"
+            srcset="/diet-today/assets/made-desktop-nOblj8yU.png 1x, /diet-today/assets/made-desktop@2x-D7TlM3Cb.png 2x"
+          />
+          <!-- Tablet -->
+          <source
+            media="(min-width: 768px)"
+            srcset="/diet-today/assets/made-tablet-BuDgBx_R.png 1x, /diet-today/assets/made-tablet@2x-Ckc8LQ9C.png 2x"
+          />
+          <!-- Mobile -->
+          <source
+            media="(max-width: 767px)"
+            srcset="/diet-today/assets/made-mobile-DDPmflLI.png 1x, /diet-today/assets/made-mobile@2x-exZOii_5.png 2x"
+          />
+          <img
+            class="order-image"
+            src="/diet-today/assets/made-mobile-DDPmflLI.png"
+            alt="Making drink photo"
+          />
+        </picture>
+        <div class="socials">
+          <p class="socials-text">Follow us on our social networks:</p>
+          <ul class="socials-list">
+            <li class="socials-item">
+              <a
+                class="socials-link"
+                href="https://www.instagram.com/goitclub/ "
+                target="_blank"
+              >
+                INSTAGRAM
+              </a>
+            </li>
+            <li class="socials-item">
+              <a
+                class="socials-link"
+                href=" https://www.facebook.com/goITclub/ "
+                target="_blank"
+              >
+                FACEBOOK
+              </a>
+            </li>
+            <li class="socials-item">
+              <a
+                class="socials-link"
+                href="https://www.youtube.com/c/GoIT "
+                target="_blank"
+              >
+                YOUTUBE
+              </a>
+            </li>
+          </ul>
         </div>
+      </div>
+    </div>
   </div>
 </section>
 
