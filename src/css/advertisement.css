@@ -2,7 +2,6 @@
   padding: 80px 0;
   background-color: #fbfbfb;
 }
-
 .advert-paragraph {
   color: #141414;
   font-size: 48px;
@@ -10,7 +9,6 @@
   line-height: 1.08;
   letter-spacing: -0.01em;
 }
-
 .advert-span {
   display: inline-block;
   color: #fbfbfb;
@@ -18,7 +16,6 @@
   background-color: #576f35;
   width: 335px;
 }
-
 @media only screen and (min-width: 768px) {
   .advert-paragraph {
     font-size: 64px;
@@ -28,13 +25,11 @@
     width: 675px;
   }
 }
-
 @media only screen and (min-width: 1280px) {
   .advert-paragraph {
     font-size: 76px;
   }
 }
-
 .advert-span {
   width: 808px;
 }
@@ -53,22 +48,19 @@
   text-transform: uppercase;
   color: #141414;
 }
-
 @media only screen and (min-width: 768px) {
   .advertisement-text {
     font-size: 64px;
-
     line-height: 1;
     letter-spacing: -0.01em;
   }
 }
-
 @media only screen and (min-width: 1280px) {
   .advertisement-text {
+    max-width: 1054px;
     font-size: 76px;
   }
 }
-
 .advertisement-span {
   display: inline-block;
 

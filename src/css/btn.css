@@ -33,13 +33,13 @@
   .btn:hover,
   .btn-link:hover {
     color: #7a3145;
-    background-color: #fbfbfb;
+    background-color: #d4bfc4;
   }
   .btn:active,
   .btn:focus,
   .btn-link:active,
   .btn-link:focus {
-    background-color: #d4bfc4;
+    background-color: #fbfbfb;
     color: #7a3145;
   }
 }

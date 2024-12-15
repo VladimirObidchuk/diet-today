@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 40px 0 80px;
 }
 .work::before,
 .work::after {
@@ -13,50 +14,44 @@
 }
 
 .work::before {
-  height: 43%;
+  height: 40%;
   top: 0;
   background-color: #7a3145; /* Перший колір фону */
 }
 .work::after {
-  height: 57%;
+  height: 60%;
   bottom: 0;
   background-color: #576f35; /* Другий колір фону */
 }
 .work .container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 80px;
   z-index: 1;
 }
 @media only screen and (min-width: 375px) {
   .work::before {
-    height: 47%;
+    height: 44%;
   }
   .work::after {
-    height: 53%;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .work .container {
-    flex-direction: row;
+    height: 56%;
   }
 }
 
 .img-box {
   justify-content: center;
   align-items: center;
-  padding: 40px 0;
+  margin-bottom: 40px;
 }
-
 @media only screen and (min-width: 768px) {
   .work {
     padding: 100px 0;
   }
+  .work .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .img-box {
-    padding: 0 32px 100px;
+    padding: 0 32px;
+    margin-bottom: 100px;
   }
   .work-image {
     width: 640px;
@@ -70,12 +65,14 @@
 }
 
 @media only screen and (min-width: 1280px) {
+  .work .container {
+    flex-direction: row;
+  }
   .work::before,
   .work::after {
     content: '';
     position: absolute;
     height: 100%;
-    /* Кожен колір займає половину висоти */
     top: -1px;
   }
   .work::before {
@@ -87,7 +84,8 @@
     width: 50%;
   }
   .img-box {
-    padding: 0;
+    padding: 0 100px 0 0;
+    margin: 0;
   }
   .work-image {
     width: 440px;
@@ -99,15 +97,18 @@
 }
 
 .work-wrapper {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 80px;
 }
 
 @media only screen and (min-width: 768px) {
   .work-wrapper {
     width: 440px;
+    padding-top: 100px;
   }
 }
 
@@ -127,10 +128,13 @@
 }
 
 .work-caption {
-  max-width: 335px;
   font-size: 28px;
+  color: #fbfbfb;
 }
-
+.work-desc {
+  font-size: 14px;
+  line-height: 1.43;
+}
 @media only screen and (min-width: 768px) {
   .work-caption {
     font-size: 32px;
@@ -144,7 +148,7 @@
 @media only screen and (min-width: 768px) {
   .work-desc {
     font-size: 16px;
-    line-height: 125%;
+    line-height: 1.25;
   }
 }
 .work-list {
@@ -173,25 +177,28 @@
 
 .work-list li {
   counter-increment: custom-counter;
-  position: relative;
-  padding-left: 24px;
 }
 
 .work-list li::before {
+  display: flex;
+  align-items: center;
   content: '';
   position: absolute;
-  left: 0;
+  left: 24px;
   top: 50%;
   transform: translateY(-50%);
-  width: 52px;
-  height: 52px;
+  width: 42px;
+  height: 42px;
   display: inline-block;
+  background-color: #7a3145;
+  border: 5px solid #d4bfc4;
+  border-radius: 50%;
 }
 
 .work-list li::after {
   content: counter(custom-counter);
   position: absolute;
-  left: 24px;
+  left: 45px;
   top: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Inter Tight', sans-serif;
@@ -204,27 +211,41 @@
 }
 
 .item-wrapper {
+  position: relative;
   align-items: center;
   justify-content: flex-start;
   display: flex;
   height: 76px;
   gap: 24px;
   background-color: #fbfbfb;
-  padding: 12px 24px;
+  padding: 12px 24px 12px 100px;
   border-radius: 15px;
   width: 100%;
 }
 
 .work-item {
-  font-size: 14px;
-  line-height: 143%;
+  font-size: 12px;
+  line-height: 1.43;
   color: #858585;
 }
-
+@media only screen and (min-width: 375px) {
+  .work-item {
+    font-size: 14px;
+  }
+}
 @media only screen and (min-width: 768px) {
   .work-item {
     font-size: 16px;
-    line-height: 125%;
+    line-height: 1.25;
+  }
+  .work-list li::before {
+    left: 29px;
+  }
+  .work-list li::after {
+    left: 49px;
+  }
+  .item-wrapper {
+    padding-left: 99px;
   }
 }
 
