@@ -35,8 +35,6 @@
 @media only screen and (min-width: 768px) {
   .wrapper .burger-menu {
     max-width: 351px;
-    height: 1020px;
-    padding: 360px 0 48px;
   }
 }
 
@@ -83,22 +81,16 @@
 .burger-list {
   display: flex;
   flex-direction: column;
-
   gap: 24px;
 }
 
 .burger-item {
   text-align: center;
-
   border: 1px solid #fbfbfb;
-
   border-radius: 12px;
-
   padding-top: 12px;
   padding-bottom: 12px;
-
   cursor: pointer;
-
   width: 118px;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -114,9 +106,7 @@
 .burger-link {
   font-size: 14px;
   line-height: 1.5;
-
   text-align: center;
-
   color: #fbfbfb;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -139,22 +129,20 @@
 }
 
 .burger-btn-send {
-  width: 175px;
-
+  max-width: 175px;
   font-weight: 600;
   font-size: 18px;
-
   line-height: 1.1;
   letter-spacing: -0.01em;
   text-transform: uppercase;
   color: #fbfbfb;
-
+  text-align: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media only screen and (min-width: 768px) {
   .burger-btn-send {
-    width: 157px;
+    max-width: 157px;
     padding: 16px;
   }
 }
