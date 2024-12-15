@@ -1,29 +1,30 @@
 <footer class="footer">
-  <div class="container footer-container">
-    <div class="footer-block">
-      <p class="footer-desc footer-text">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-logo">
         <a
           class="footer-link"
-          href="#"
+          href="./index.html"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <svg>
-            <use href="../img/icon.svg#icon-logo"></use>
+          <svg class="footer-logo" width="168" height="16">
+            <use href="{=$icon-path}#icon-logo"></use>
           </svg>
         </a>
-        Whether you're looking for a healthy snack or a thoughtful gift, our
-        fruit baskets are the perfect choice.
-      </p>
-
-      <div class="contact">
+        <p class="footer-desc">
+          Whether you're looking for a healthy snack or a thoughtful gift, our
+          fruit baskets are the perfect choice.
+        </p>
+      </div>
+      <div class="footer-navi">
         <nav>
           <ul class="footer-nav-list">
             <li class="footer-nav-item">
               <a class="footer-nav-how" href="#work">how it works</a>
             </li>
             <li class="footer-nav-item">
-              <a class="footer-nav-veg" href="#">vegetables</a>
+              <a class="footer-nav-veg" href="#vegetables">vegetables</a>
             </li>
             <li class="footer-nav-item">
               <a class="footer-nav-rev" href="#reviews">reviews</a>
@@ -50,21 +51,30 @@
         </address>
       </div>
     </div>
-
-    <div class="privacy-copy">
-      <ul class="footer-link-list">
-        <li class="footer-link-items">
-          <a href="" target="_blank" rel="privaci policy" class="footer-polici"
-            >Privacy Policy</a
-          >
-        </li>
-        <li class="footer-link-items">/</li>
-        <li class="footer-link-items">
-          <a href="" target="_blank" rel="coocie settings" class="footer-polici"
-            >Cookie settings</a
-          >
-        </li>
-      </ul>
+    <div class="footer-bottom">
+      <div class="footer-polici">
+        <ul class="footer-link-list">
+          <li class="footer-link-items">
+            <a
+              href=""
+              target="_blank"
+              rel="privaci policy"
+              class="footer-polici"
+              >Privacy Policy</a
+            >
+          </li>
+          <li class="footer-link-items">/</li>
+          <li class="footer-link-items">
+            <a
+              href=""
+              target="_blank"
+              rel="coocie settings"
+              class="footer-polici"
+              >Cookie settings</a
+            >
+          </li>
+        </ul>
+      </div>
 
       <p class="footer-copyright-text">&copy;Green Harvest 2023</p>
     </div>
