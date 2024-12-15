@@ -1,4 +1,167 @@
-@media only screen and (min-width: 768px) {
+.footer {
+  background-color: var(--bg-vgtables);
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
+
+.footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 4px;
+  width: 168px;
+  height: 16px;
+  margin-bottom: 14px;
+  cursor: pointer;
+}
+
+.footer-desc {
+  font-size: 14px;
+  line-height: 1.43;
+  color: #fbfbfb;
+  max-width: 335px;
+}
+
+.footer-nav-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.footer-nav-item {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+  cursor: pointer;
+}
+
+.footer-address-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 14px;
+  width: 180px;
+  margin-bottom: 80px;
+}
+
+.footer-address-link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #fbfbfb;
+  cursor: pointer;
+}
+
+.footer-link-list {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: start;
+  flex-direction: row;
+}
+
+.footer-link-items {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #d4bfc4;
+  margin-bottom: 16px;
+}
+
+.footer-polici {
+  cursor: pointer;
+}
+
+.footer-copyright-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #d4bfc4;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .footer-link {
+    width: 216px;
+    height: 20px;
+    margin-bottom: 24px;
+  }
+
+  .footer-desc {
+    font-size: 16px;
+    line-height: 1.25;
+    width: 265px;
+  }
+
+  .footer-nav-list {
+    gap: 24px;
+    margin-top: 0;
+    margin-bottom: 64px;
+  }
+
+  .footer-address-list {
+    gap: 24px;
+    margin-bottom: 100px;
+  }
+
+  .footer-address-link {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .footer-link-items {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .footer-copyright-text {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .footer-top {
+    display: flex;
+  }
+
+  .footer-navi {
+    display: block;
+    margin-left: auto;
+  }
+
+  .footer-bottom {
+    display: flex;
+  }
+
+  .footer-polici {
+    margin-right: auto;
+  }
+}
+
 @media only screen and (min-width: 1280px) {
+  .footer {
+    padding-top: 52px;
+    padding-bottom: 52px;
+  }
+
+  .footer-navi {
+    display: flex;
+    gap: 121px;
+  }
+
+  .footer-nav-list {
+    margin-bottom: 124px;
+  }
 }

@@ -5,6 +5,7 @@
   height: 52px;
   background-color: #7a3145;
   border: none;
+  text-transform: uppercase;
 }
 .btn:active,
 .btn:focus {
@@ -19,9 +20,11 @@
   min-width: 114px;
   height: 44px;
   background-color: transparent;
+  color: #fbfbfb;
 }
 .btn-link:active,
 .btn-link:focus {
+  color: #7a3145;
   border: none;
   background-color: #fbfbfb;
 }
@@ -29,6 +32,7 @@
 @media only screen and (min-width: 1280px) {
   .btn:hover,
   .btn-link:hover {
+    color: #7a3145;
     background-color: #fbfbfb;
   }
   .btn:active,
@@ -36,5 +40,6 @@
   .btn-link:active,
   .btn-link:focus {
     background-color: #d4bfc4;
+    color: #7a3145;
   }
 }
