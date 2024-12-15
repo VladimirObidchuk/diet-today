@@ -160,7 +160,7 @@
 .work-list li::before {
   content: '';
   position: absolute;
-  left: 0;
+  left: 24px;
   top: 50%;
   transform: translateY(-50%);
   width: 52px;
@@ -177,7 +177,7 @@
 .work-list li::after {
   content: counter(custom-counter);
   position: absolute;
-  left: 26px;
+  left: 50px;
   top: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Inter Tight', sans-serif;
@@ -205,6 +205,7 @@
   font-size: 14px;
   line-height: 143%;
   color: #858585;
+  margin-left: 24px;
 }
 
 @media only screen and (min-width: 768px) {
