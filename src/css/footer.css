@@ -18,7 +18,7 @@
 
 .footer-desc {
   font-size: 14px;
-  line-height: 1.4;
+  line-height: 1.43;
   color: #fbfbfb;
   max-width: 335px;
 }
@@ -56,7 +56,7 @@
 .footer-address-link {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.4;
+  line-height: 1.43;
   color: #fbfbfb;
   cursor: pointer;
 }
@@ -84,7 +84,7 @@
 .footer-copyright-text {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.4;
+  line-height: 1.43;
   color: #d4bfc4;
 }
 
@@ -100,11 +100,10 @@
     margin-bottom: 24px;
   }
 
-  .footer-text {
+  .footer-desc {
     font-size: 16px;
     line-height: 1.25;
     width: 265px;
-    height: 104px;
   }
 
   .footer-nav-list {
@@ -115,6 +114,7 @@
 
   .footer-address-list {
     gap: 24px;
+    margin-bottom: 100px;
   }
 
   .footer-address-link {
@@ -140,6 +140,7 @@
     display: block;
     margin-left: auto;
   }
+
   .footer-bottom {
     display: flex;
   }
@@ -158,5 +159,9 @@
   .footer-navi {
     display: flex;
     gap: 121px;
+  }
+
+  .footer-nav-list {
+    margin-bottom: 124px;
   }
 }
