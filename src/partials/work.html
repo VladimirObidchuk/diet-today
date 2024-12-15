@@ -1,3 +1,103 @@
-<section class="work">
-  <div class="container"></div>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/src/css/work.css" />
+    <title>Green Harvest</title>
+  </head>
+  <body>
+    <section class="work" id="work">
+      <div class="work-container">
+        <h2 class="visually-hidden work-title title">How it works</h2>
+        <div class="img-box">
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                /src/img/work/work-desktop.png    1x,
+                /src/img/work/work-desktop@2x.png 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                /src/img/work/work-tablet.png    1x,
+                /src/img/work/work-tablet@2x.png 2x
+              "
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                /src/img/work/work-mobile.png    1x,
+                /src/img/work/work-mobile@2x.png 2x
+              "
+            />
+            <img
+              class="work-image image"
+              src="/src/img/work/work-desktop.png"
+              alt="How it work"
+              width="440"
+              height="560"
+            />
+          </picture>
+        </div>
+        <div class="work-wrapper">
+          <div class="work-wrapper-text">
+            <h3 class="work-caption">
+              To order your <span class="color-caption">vegetable</span> basket,
+              simply follow these <span class="color-caption">easy steps</span>
+            </h3>
+            <p class="work-desc">
+              Our baskets are assembled with care and delivered straight to your
+              doorstep, so you can enjoy the taste of fresh fruit without ever
+              leaving your home.
+            </p>
+          </div>
+          <div class="list-wrapper">
+            <ol class="work-list">
+              <div class="item-wrapper">
+                <li class="work-item">
+                  Just choose <span class="bold-text">the vegetable</span> you
+                  want to order by clicking on the checkboxes
+                  <span class="bold-text">next to it.</span>
+                </li>
+              </div>
+              <div class="item-wrapper">
+                <li class="work-item">
+                  Click on <span class="bold-text">the basket</span> and fill
+                  out the form.
+                </li>
+              </div>
+              <div class="item-wrapper">
+                <li class="work-item">
+                  Sit back and relax! Your
+                  <span class="bold-text">fresh vegetables</span> basket will be
+                  delivered.
+                </li>
+              </div>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
