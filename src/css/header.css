@@ -1,34 +1,33 @@
 .page-header {
-  background-color: green;
+  background-color: blueviolet;
+  position: absolute;
   width: 100%;
-  height: 32px;
+  padding: 20px 0;
 }
 
-.header-container {
+.header-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.nav-list, 
+.nav-list,
 .header-btn {
-    display: none;
-} 
+  display: none;
+}
 
-.burger-btn {   
-    width: 32px;
+.burger-btn {
+  width: 32px;
   height: 32px;
 }
-  
+
 .nav-logo {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 168px;
-  height: 16px;
-  gap: 2px;
-  padding-left: 20px;
 }
 .nav-logo-icon {
+  max-width: 168px;
+  height: 16px;
   fill: #fbfbfb;
 }
 .header-logo-text {
@@ -50,48 +49,44 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .page-header {
-            height: 40px;
-        }
-    
-    
-        .nav-logo {
-            
-            max-width: 216px;
-            height: 20px;
-            padding-left: 32px;
-        }
-    
-    
-        .burger-btn {
-            width: 40px;
-            height: 40px;
-        }
-    
-        .burger-icon {
-            display: block;
-            stroke-width: 3px;
-            stroke: #fbfbfb;
-        }
+  .page-header {
+    padding: 32px 0;
+  }
+  .nav-logo-icon {
+    max-width: 216px;
+    height: 20px;
+    fill: #fbfbfb;
+  }
 
+  .burger-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .burger-icon {
+    display: block;
+    stroke-width: 3px;
+    stroke: #fbfbfb;
+  }
 }
 @media only screen and (min-width: 1280px) {
+  .nav-logo {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 100px;
+  }
 
-    .page-header {
-        height: 52px;
-    }
-
-
-    .nav-logo {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 100px;
-    }
-
-    
-   
-    .burger-btn {
-        display: none;
-    }
-    
+  .burger-btn {
+    display: none;
+  }
+  .header-btn {
+    display: block;
+  }
+  .nav-list {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: auto;
+    margin-right: 20px;
+  }
 }
