@@ -101,13 +101,13 @@
   width: 56px;
   height: 56px;
   margin: 0 auto;
+  margin-bottom: 24px;
 }
 
 .reviews-cards-title {
   font-size: 18px;
   line-height: 1.12;
   text-align: center;
-  margin-top: 24px;
   margin-bottom: 8px;
 }
 
@@ -116,6 +116,7 @@
   line-height: 1.43;
   text-align: center;
   color: #858585;
+  max-width: 288px;
 }
 
 @media only screen and (min-width: 768px) {
