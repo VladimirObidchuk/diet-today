@@ -1,3 +1,124 @@
-<section class="order">
-  <div class="container"></div>
+<section class="order" id="order">
+  <div class="container">
+    <h1 class="order-title">
+      Fresh <span class="text-accent-harvest">Harvest</span> Box has got you
+      covered
+    </h1>
+    <p class="order-appeal">
+      Our boxes are packed with delicious, nutritious vegetables, perfect for
+      anyone looking to eat healthier or support local farmers. Order your box
+      today and start enjoying the best that nature has to offer!
+    </p>
+    <div class="order-wrapper">
+      <div class="order-window-left">
+        <p class="order-caption">
+          Ordering <span class="text-accent-from-us">from us </span>is quick and
+          easy! Fill out<span class="text-accent-the-form"> the form</span>
+          below and we will contact you!
+        </p>
+        <form class="order-form" action="">
+          <div class="inp-wrp">
+            <input
+              class="inp"
+              type="text"
+              name="user-name"
+              placeholder="Full Name"
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              required
+            />
+            <p class="text-valid">Succes!</p>
+            <p class="text-invalid">Invalid email, try again</p>
+          </div>
+          <div class="inp-wrp">
+            <input
+              class="inp"
+              type="email"
+              name="email"
+              placeholder="Email"
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              required
+            />
+            <p class="text-valid">Succes!</p>
+            <p class="text-invalid">Invalid email, try again</p>
+          </div>
+          <div class="order-form-field field-textarea">
+            <textarea
+              class="order-form-message"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Comment"
+            ></textarea>
+          </div>
+          <button class="btn-order" type="submit">Send</button>
+        </form>
+      </div>
+      <div class="order-right-side">
+        <picture class="order-image">
+          <!-- Desktop -->
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              {=$image-path}made-desktop.png    1x,
+              {=$image-path}made-desktop@2x.png 2x
+            "
+          />
+          <!-- Tablet -->
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              {=$image-path}made-tablet.png    1x,
+              {=$image-path}made-tablet@2x.png 2x
+            "
+          />
+          <!-- Mobile -->
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              {=$image-path}made-mobile.png    1x,
+              {=$image-path}made-mobile@2x.png 2x
+            "
+          />
+          <img
+            class="order-image"
+            src="{=$image-path}made-mobile.png"
+            alt="Making drink photo"
+            width="428"
+            height="352"
+          />
+        </picture>
+        <div class="socials">
+          <p class="socials-text">Follow us on our social networks:</p>
+          <ul class="socials-list">
+            <li class="socials-item">
+              <a
+                class="socials-link"
+                href="https://www.instagram.com/goitclub/ "
+                target="_blank"
+              >
+                INSTAGRAM
+              </a>
+            </li>
+            <li class="socials-item">
+              <a
+                class="socials-link"
+                href=" https://www.facebook.com/goITclub/ "
+                target="_blank"
+              >
+                FACEBOOK
+              </a>
+            </li>
+            <li class="socials-item">
+              <a
+                class="socials-link"
+                href="https://www.youtube.com/c/GoIT "
+                target="_blank"
+              >
+                YOUTUBE
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
