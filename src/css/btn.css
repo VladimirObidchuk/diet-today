@@ -19,6 +19,7 @@
   min-width: 114px;
   height: 44px;
   background-color: transparent;
+  color: #fbfbfb;
 }
 .btn-link:active,
 .btn-link:focus {
