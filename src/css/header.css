@@ -81,6 +81,9 @@
   .header-btn {
     display: block;
   }
+  .nav-link {
+    text-transform: capitalize;
+  }
   .nav-list {
     display: flex;
     align-items: center;

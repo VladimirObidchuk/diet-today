@@ -28,12 +28,17 @@
 .hero-title {
   max-width: 335px;
   font-weight: 600;
-  font-size: 52px;
+  font-size: 48px;
   line-height: 1;
   letter-spacing: -0.01em;
   text-transform: uppercase;
   color: #fbfbfb;
   margin-bottom: 20px;
+}
+@media only screen and (min-width: 375px) {
+  .hero-title {
+    font-size: 52px;
+  }
 }
 .hero-text {
   font-weight: 500;

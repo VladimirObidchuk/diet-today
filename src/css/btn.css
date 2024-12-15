@@ -5,6 +5,7 @@
   height: 52px;
   background-color: #7a3145;
   border: none;
+  text-transform: uppercase;
 }
 .btn:active,
 .btn:focus {
