@@ -1,101 +1,46 @@
-/* #region Base */
-body {
-  /* font-family: Inter, Avenir, Helvetica, Arial, sans-serif; */
-  font-family: 'Inter Tight', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.25;
-  color: #fbfbfb;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-
+.work {
+  position: relative;
   display: flex;
-  flex-direction: column;
-  min-width: 100vw;
-  min-height: 100vh;
-  margin: 0;
+  align-items: center;
+  justify-content: center;
 }
-
-html {
-  scroll-behavior: smooth;
-}
-
-.visually-hidden {
+.work::before,
+.work::after {
+  content: '';
   position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+  width: 100%; /* Кожен колір займає половину висоти */
+  left: 0;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.work::before {
+  height: 43%;
+  top: 0;
+  background-color: #7a3145; /* Перший колір фону */
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
+.work::after {
+  height: 57%;
+  bottom: 0;
+  background-color: #576f35; /* Другий колір фону */
 }
-
-p:last-child {
-  margin-bottom: 0;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.text {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.25;
-  color: #fbfbfb;
-}
-.title {
-  font-weight: 600;
-  line-height: 1;
-  letter-spacing: -0.01em;
-  text-transform: uppercase;
-}
-/* #endregion */
-
-/* #region How it works */
-.work-container {
+.work .container {
+  position: relative;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
-  background-color: #576f35;
-  min-width: 320px;
-  max-width: 375px;
+  align-items: center;
+  gap: 80px;
+  z-index: 1;
 }
-
-@media only screen and (min-width: 768px) {
-  .work-container {
-    max-width: 768px;
+@media only screen and (min-width: 375px) {
+  .work::before {
+    height: 47%;
+  }
+  .work::after {
+    height: 53%;
   }
 }
 
 @media only screen and (min-width: 1280px) {
-  .work-container {
-    max-width: 1280px;
+  .work .container {
     flex-direction: row;
   }
 }
@@ -103,41 +48,53 @@ img {
 .img-box {
   justify-content: center;
   align-items: center;
-  background-color: #7a3145;
-  padding: 40px 20px;
-  margin-left: 0;
-  width: 100%;
+  padding: 40px 0;
 }
 
 @media only screen and (min-width: 768px) {
+  .work {
+    padding: 100px 0;
+  }
   .img-box {
-    padding: 100px 64px;
+    padding: 0 32px 100px;
+  }
+  .work-image {
+    width: 640px;
+  }
+  .work::before {
+    height: 54%;
+  }
+  .work::after {
+    height: 46%;
   }
 }
 
 @media only screen and (min-width: 1280px) {
+  .work::before,
+  .work::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    /* Кожен колір займає половину висоти */
+    top: -1px;
+  }
+  .work::before {
+    right: 0;
+    width: 50%;
+  }
+  .work::after {
+    left: 50%;
+    width: 50%;
+  }
   .img-box {
-    padding: 100px 100px;
+    padding: 0;
   }
-}
-
-.work-image {
-  margin: 0 auto;
-  width: 335px;
-  height: 452px;
-}
-
-@media screen and (min-width: 768px) {
-  .work-image {
-    width: 640px;
-    height: 640px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
   .work-image {
     width: 440px;
-    height: 560px;
+  }
+  .work .container {
+    width: 100%;
+    justify-content: space-between;
   }
 }
 
@@ -146,8 +103,6 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 335px;
-  margin: 80px auto;
 }
 
 @media only screen and (min-width: 768px) {
@@ -158,7 +113,7 @@ img {
 
 @media only screen and (min-width: 1280px) {
   .work-wrapper {
-    margin: 100px;
+    padding: 0;
   }
 }
 
@@ -172,12 +127,8 @@ img {
 }
 
 .work-caption {
-  font-weight: 600;
+  max-width: 335px;
   font-size: 28px;
-  line-height: 100%;
-  letter-spacing: -0.01em;
-  text-transform: uppercase;
-  color: #fbfbfb;
 }
 
 @media only screen and (min-width: 768px) {
@@ -190,19 +141,12 @@ img {
   color: #d4bfc4;
 }
 
-.work-desc {
-  font-size: 14px;
-  line-height: 143%;
-  color: #fbfbfb;
-}
-
 @media only screen and (min-width: 768px) {
   .work-desc {
     font-size: 16px;
     line-height: 125%;
   }
 }
-
 .work-list {
   display: flex;
   align-items: flex-start;
@@ -242,12 +186,6 @@ img {
   width: 52px;
   height: 52px;
   display: inline-block;
-  background: url('data:image/svg+xml;utf8, \
-    <svg xmlns="http://www.w3.org/2000/svg" class="number-icon" \
-    width="52" height="52" viewBox="0 0 52 52" fill="none"> \
-    <circle cx="26" cy="26" r="23.5" fill="%237A3145" stroke="%23D4BFC4" stroke-width="5"/> \
-    </svg>')
-    no-repeat center center;
 }
 
 .work-list li::after {
