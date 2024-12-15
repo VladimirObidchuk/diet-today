@@ -3,7 +3,6 @@
 }
 
 
-
 .reviews-container {
   padding: 80px 0;
 }
@@ -48,14 +47,20 @@ line-height: 1;
     font-size: 14px;
     line-height: 1.42857;
     color: #141414;
+
+    max-width: 335px;
 }
 
 @media only screen and (min-width: 768px) {
     .reviews-text {
 font-size: 16px;
 line-height: 1.25;
+
+max-width: 553px;
   }
 }
+
+
 
 @media only screen and (max-width: 767px) {
     .reviews-item-2, .reviews-item-3{
@@ -127,6 +132,9 @@ font-size: 14px;
 line-height: 1.42857;
 text-align: center;
 color: #858585;
+
+
+max-width: 288px;
 }
 
 
