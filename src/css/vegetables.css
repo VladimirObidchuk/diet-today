@@ -78,6 +78,9 @@
     padding: 32px;
     width: calc((100% - 48px) / 3);
   }
+  .vegetables-item:hover {
+    transform: scale(1.05);
+  }
 }
 .vegetables-title-fruct {
   font-size: 28px;
