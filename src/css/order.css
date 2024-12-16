@@ -175,8 +175,14 @@ line-height: 1;
 letter-spacing: -0.01em;
 text-transform: uppercase;
 color: #141414;
-
+min-width: 296px;
 margin-bottom: 40px;
+
+}
+@media only screen and (min-width: 320px) and (max-width: 374px){
+  .order-caption {
+    min-width: unset;
+  } 
 }
 
 @media only screen and (min-width: 768px) {
@@ -185,6 +191,12 @@ margin-bottom: 40px;
   margin-bottom: 52px;
   }
 }
+
+@media only screen and (min-width: 1280px) {
+  .order-caption {
+    min-width: 430px;
+  }}
+
 
 .text-accent-from-us {
   color: #7a3145;
