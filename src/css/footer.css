@@ -41,6 +41,19 @@
   text-transform: uppercase;
   color: #fbfbfb;
   cursor: pointer;
+
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s, transform 0.3s;
+}
+
+.footer-nav-item:hover,
+.footer-nav-item:focus {
+  background-size: 100% 2px;
+  transform: scale(1.05);
 }
 
 .footer-address-list {
@@ -59,11 +72,18 @@
   line-height: 1.43;
   color: #fbfbfb;
   cursor: pointer;
+
+  transition: transform 0.3s;
+}
+
+.footer-address-link:hover,
+.footer-address-link:focus {
+  transform: scale(1.05);
 }
 
 .footer-link-list {
   display: flex;
-  gap: 8px;
+  gap: 22px;
   align-items: center;
   justify-content: start;
   flex-direction: row;
@@ -74,6 +94,15 @@
   font-size: 14px;
   line-height: 1.4;
   color: #d4bfc4;
+  position: relative;
+}
+
+.footer-link-items:not(:last-child)::after {
+  content: '/';
+  position: absolute;
+  right: -14px;
+  top: 0;
+  width: 6px;
 }
 
 .footer-polici {
@@ -155,12 +184,20 @@
     padding-bottom: 52px;
   }
 
+  .footer-top {
+    margin-bottom: 124px;
+  }
+
   .footer-navi {
     display: flex;
     gap: 121px;
   }
 
   .footer-nav-list {
-    margin-bottom: 124px;
+    margin-bottom: 0;
+  }
+
+  .footer-address-list {
+    margin-bottom: 0;
   }
 }
