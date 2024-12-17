@@ -22,7 +22,7 @@
 .btn-link:active,
 .btn-link:focus {
   color: #7a3145;
-  border: none;
+  border: transparent;
   background-color: #fbfbfb;
 }
 .btn,
@@ -33,6 +33,7 @@
 @media only screen and (min-width: 1280px) {
   .btn:hover,
   .btn-link:hover {
+    border: transparent;
     color: #7a3145;
     background-color: #d4bfc4;
   }

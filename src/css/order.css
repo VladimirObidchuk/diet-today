@@ -8,6 +8,7 @@
   padding: 0 16px;
   height: 48px;
   outline: none;
+  position: relative;
 }
 @media only screen and (min-width: 768px) {
   .inp {
@@ -32,9 +33,9 @@
 }
 .text-valid,
 .text-invalid {
-  font-size: 14px;
+  position: absolute;
+  font-size: 12px;
   padding-left: 20px;
-  margin-top: 4px;
   display: none;
 }
 .text-valid {
