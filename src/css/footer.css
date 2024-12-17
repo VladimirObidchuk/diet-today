@@ -41,19 +41,12 @@
   text-transform: uppercase;
   color: #fbfbfb;
   cursor: pointer;
-
   text-decoration: none;
   background-image: linear-gradient(currentColor, currentColor);
   background-position: 50% 100%;
   background-repeat: no-repeat;
   background-size: 0% 2px;
   transition: background-size 0.3s, transform 0.3s;
-}
-
-.footer-nav-item:hover,
-.footer-nav-item:focus {
-  background-size: 100% 2px;
-  transform: scale(1.05);
 }
 
 .footer-address-list {
@@ -75,12 +68,6 @@
 
   transition: transform 0.3s;
 }
-
-.footer-address-link:hover,
-.footer-address-link:focus {
-  transform: scale(1.05);
-}
-
 .footer-link-list {
   display: flex;
   gap: 22px;
@@ -199,5 +186,14 @@
 
   .footer-address-list {
     margin-bottom: 0;
+  }
+  .footer-nav-item:hover,
+  .footer-nav-item:focus {
+    background-size: 100% 2px;
+    transform: scale(1.05);
+  }
+  .footer-address-link:hover,
+  .footer-address-link:focus {
+    transform: scale(1.05);
   }
 }

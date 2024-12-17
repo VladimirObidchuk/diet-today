@@ -192,9 +192,9 @@
     height: 96px;
   }
 }
-  .order-form-message:focus{
-border-color: #7a3145;
-  }
+.order-form-message:focus {
+  border-color: #7a3145;
+}
 
 .order-form-message::placeholder {
   color: #141414;
@@ -215,7 +215,6 @@ border-color: #7a3145;
 .btn-order:focus {
   color: #7a3145;
   border: 1px solid #7a3145;
-
 }
 .order-right-side {
   background-color: #7a3145;
@@ -275,6 +274,7 @@ border-color: #7a3145;
   gap: 8px 23px;
   flex-wrap: wrap;
 }
+
 @media only screen and (min-width: 768px) {
   .socials-text {
     gap: 31px;
@@ -283,6 +283,7 @@ border-color: #7a3145;
 .socials-item {
   position: relative;
 }
+
 .socials-item:not(:last-child)::after {
   position: absolute;
   content: '';
@@ -293,19 +294,23 @@ border-color: #7a3145;
   background-color: #fff;
   transform: rotate(20deg);
 }
-.socials-item {
+.socials-link {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.11;
   letter-spacing: -0.01em;
   text-transform: uppercase;
   color: #fbfbfb;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-block;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media only screen and (min-width: 1280px) {
-.socials-item:hover {
-transform: scale(1.1);
-color:burlywood;
-
-}
+  .socials-link:hover {
+    transform: scale(1.1);
+    color: burlywood;
+  }
+  .socials-item::after {
+    transform: scale(1);
+  }
 }
